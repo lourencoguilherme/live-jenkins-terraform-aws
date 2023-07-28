@@ -6,6 +6,9 @@ terraform {
     }
   }
   backend "s3" {
+    bucket = "live-jenkins"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
   }
 }
 
